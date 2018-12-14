@@ -1,0 +1,22 @@
+{
+"players":[{
+"id":1,
+"name" : "sachin",
+"image": "../../sachin.jfif",
+"votes":14
+},
+
+{
+"id":2,
+"name" : "Virat",
+"image":"../../../virat.jfif",
+"votes":13
+},
+{
+"id":3,
+"name" : "Rahul",
+"image" :"../../rahul.jfif",
+"votes":12
+}
+]
+}

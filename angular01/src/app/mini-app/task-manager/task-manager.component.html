@@ -1,0 +1,27 @@
+<br>
+Task :
+<input type="text" name="txtTask" [(ngModel)]='item' placeholder="Add a new task"> &nbsp;
+<button (click)="saveItem(item)">Add Task </button> 
+<br>
+<br>
+Pending Tasks
+<ol>
+  <li *ngFor= "let task of myTasks ; let currentTask= index"> {{task | uppercase}}
+    &nbsp; &nbsp; <button (click)="removeItem(currentTask)"> Done</button>
+  </li>
+</ol>
+
+Completed Tasks
+<ol>
+  <li  *ngFor="let competedTask of myCompetedTasks"  > {{competedTask}}
+
+  </li>
+</ol>
+<br>
+Curency Pipe:: {{salary | currency:'INR'}} <br>
+Date pipe  ::{{mydate | date:'h:mm'}}<br>
+Friends Without Sort Pipe :: {{myFriends}}<br>
+Friends Sort Pipe :: {{myFriends| stringSortpipe}}<br>
+Score Sort pipe ::{{myScore}}<br>
+Score Sort pipe ::{{myScore | numberSort}}<br>
+

@@ -1,0 +1,49 @@
+<br>
+<br>
+Search for a users...
+<input type="text" [(ngModel)]="searchString" placeholder="Type a user name..">
+<br> <br>
+<table border="1">
+  <th>
+    ID
+  </th>
+  <th>
+    Name
+  </th>
+  <th>
+    Email
+  </th>
+  <th>
+    Place
+  </th>
+  <tr *ngFor="let user of allUsers | searchPipe : searchString ">
+
+ <td>
+      {{user.id}}
+    </td>
+    <td>
+      {{user.name}}
+    </td>
+
+    <td>
+      {{user.email}}
+    </td>
+    <td>
+      {{user.address.city}}
+    </td>
+    <td>
+      <button (click)="deleteUser(user.id)"> Delete</button>
+    </td>
+    <td>
+      <button (click)="viewDetails(user.id)"> View Detail</button>
+    </td>
+  </tr>
+</table>
+<br>
+Add a new User <br>
+<input type="text"  [(ngModel)]="username" placeholder="New user name"> 
+ <input type="text" placeholder=" Email Id" [(ngModel)]="useremail"> 
+  <input type="text" placeholder=" City" [(ngModel)]="userCity"> 
+
+<button (click)="createNewUser(username,useremail,userCity)"> Create new user</button>
+

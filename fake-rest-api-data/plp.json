@@ -1,0 +1,33 @@
+{
+  "plp": [
+  {
+    "id": 1,
+    "name": "Samsung",
+    "model": "Galaxy S5",
+    "price": "3000$",
+	"description" :"32GB, 2GB Ram, 1080HD, 5.1 inches, Android",
+	"image":"../../../assets/samsung.jfif"
+   
+   
+  },
+  {
+    "id": 2,
+    "name": "Apple",
+    "model": "iPhone 6",
+	 "price": "3000$",
+	 "description": "32GB, 64Bit, 1080HD, 4.7 inches, iOS 8",
+	 "image":"../../../assets/apple.jfif"
+    
+   
+  },
+  {
+    "id": 3,
+    "name": "Nokia",
+    "model": "Lumia 133",
+    "price": "2400$",
+	"description": "32GB, 4GB Ram, 1080HD, 6.3 inches, WP 8",
+	"image":"../../../assets/nokia.jfif"
+    
+  }
+]
+}
